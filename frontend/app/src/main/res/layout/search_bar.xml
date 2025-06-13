@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="55sp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_bar_background"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.90"> <!-- 90% = 5% de chaque côté -->
+
+        <!-- Champ de recherche -->
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Rechercher une plante, un ami ..."
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:paddingHorizontal="12dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/life_savers"
+            android:inputType="text" />
+
+        <!-- Bouton de recherche -->
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="70sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_button_background"
+            android:src="@drawable/search"
+            android:scaleType="center"
+            android:contentDescription="Rechercher"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFF</color>  <!-- Texte gris très foncé -->
+    <color name="green_full">#06911A</color>
+    <!-- Couleurs personnalisées pour les indicateurs -->
+    <color name="indicator_background">#D9D9D9</color>
+    <color name="transparent">#00000000</color>
+    <color name="green_smooth">#529106</color>
+    <!-- Couleurs pour les indicateurs écologiques -->
+    <color name="indicator_green">#4CAF50</color>
+    <color name="indicator_green_dark">#2E7D32</color>
+    <color name="indicator_blue">#2196F3</color>
+    <color name="indicator_blue_dark">#1565C0</color>
+    <color name="indicator_orange">#FF9800</color>
+    <color name="indicator_orange_dark">#E65100</color>
+    <color name="indicator_gray">#9E9E9E</color>
+    <color name="indicator_gray_dark">#616161</color>
+
+    <!-- Couleur existante pour la zone verte -->
+    <color name="plant_icon_green">#4D7533</color>
+
+    <!-- Couleurs de texte -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#555555</color>
+    <color name="text_accent">#4D7533</color>
+</resources>

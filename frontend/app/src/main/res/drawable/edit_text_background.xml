@@ -1,0 +1,14 @@
+<!-- res/drawable/edit_text_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="-2dp"
+        android:right="-2dp"
+        android:top="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="1dp"
+                android:color="#000000"/> <!-- Couleur de la bordure -->
+        </shape>
+    </item>
+</layer-list>

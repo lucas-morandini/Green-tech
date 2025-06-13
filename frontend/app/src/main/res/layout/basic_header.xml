@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <!-- Guideline verticale gauche à 5% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical" />
+
+    <!-- Guideline verticale droite à 95% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical" />
+
+    <!-- Guideline horizontale top à 10% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.10"
+        android:orientation="horizontal" />
+
+    <!-- Guideline horizontale bottom à 90% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.90"
+        android:orientation="horizontal" />
+
+    <!-- Conteneur parent en column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp">
+
+        <!-- Div 1: Header avec Logo, Notif, Settings en row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Logo à gauche -->
+            <ImageView
+                android:id="@+id/header_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo" />
+
+            <!-- Espacement flexible -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Groupe notif + settings à droite -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bloc_notif"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:id="@+id/header_notif"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/notifications" />
+
+                    <TextView
+                        android:id="@+id/badge_notif"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="end|top"
+                        android:background="@drawable/badge_background"
+                        android:text="9+"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/header_settings"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/settings"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Div 2: Texte "EcoPlant" centré horizontalement avec taille dynamique -->
+        <TextView
+            android:id="@+id/text_eco_plant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/life_savers"
+            android:gravity="center"
+            android:text="EcoPlant"
+            android:textColor="#046128"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

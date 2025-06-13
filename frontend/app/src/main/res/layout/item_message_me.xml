@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- L'heure -->
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:05"
+            android:fontFamily="@font/life_savers"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginRight="12dp"
+            app:layout_constraintEnd_toStartOf="@id/message_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Le message -->
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_message_other"
+            android:text="Voici un message assez long pour tester la limite de largeur et vérifier que tout reste visible à l’écran."
+            android:fontFamily="@font/life_savers"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/message_initials"
+            app:layout_constraintTop_toTopOf="@id/message_time"
+            app:layout_constraintBottom_toBottomOf="@id/message_time"
+            app:layout_constraintWidth_max="0dp"
+            app:layout_constrainedWidth="true"
+            android:maxWidth="0dp"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <!-- Initiales -->
+        <TextView
+            android:id="@+id/message_initials"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="JD"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/life_savers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- PJ -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/pj_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginEnd="12dp"
+        app:flexWrap="wrap"
+        app:flexDirection="row_reverse" />
+</LinearLayout>

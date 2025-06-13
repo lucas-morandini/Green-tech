@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginVertical="8dp"
+    android:paddingHorizontal="12dp"
+    android:gravity="start">
+
+    <!-- Initiales (seulement pour les autres) -->
+    <TextView
+        android:id="@+id/message_initials"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/circle_background"
+        android:text="JD"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <!-- Contenu du message -->
+    <LinearLayout
+        android:id="@+id/message_bubble_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <!-- Texte + Heure -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_message_other"
+                android:text="Salut comment ça va ?"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:maxWidth="250dp" />
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:05"
+                android:textColor="#AAAAAA"
+                android:textSize="11sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <!-- Pièces jointes -->
+        <LinearLayout
+            android:id="@+id/message_attachments_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</LinearLayout>

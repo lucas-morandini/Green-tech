@@ -1,0 +1,8 @@
+<resources>
+    <style name="CustomTextInputBottomLine">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxStrokeColor">#000000</item>
+        <item name="boxStrokeWidth">2sp</item>
+        <item name="boxStrokeWidthFocused">2sp</item>
+    </style>
+</resources>

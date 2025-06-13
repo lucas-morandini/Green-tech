@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Bulle avec initiales -->
+    <TextView
+        android:id="@+id/initials_text"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="A . b"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/life_savers"
+        android:background="@drawable/circle_background"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Nom complet -->
+    <TextView
+        android:id="@+id/full_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/life_savers"
+        android:text="Alice Dupont"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

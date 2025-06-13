@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    app:cardBackgroundColor="#E8E8E8"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Zone verte gauche avec l'icône de plante -->
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/plant_icon_green">
+
+            <ImageView
+                android:id="@+id/plant_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/contacts"
+                android:contentDescription="Icône de plante"
+                app:tint="@android:color/white" />
+        </FrameLayout>
+
+        <!-- Informations de la plante (nom, type, date, etc.) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Nom de la personne -->
+            <TextView
+                android:id="@+id/user_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dupont dupont"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!-- Type de plante -->
+            <TextView
+                android:id="@+id/user_role_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="researcher à Montpellier"
+                android:textColor="#4D7533"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_identification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="3 identifications"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageButton
+                android:id="@+id/contact_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_user"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

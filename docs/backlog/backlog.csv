@@ -1,0 +1,60 @@
+ID,Type d'utilisateur,Description,Critères d'acceptation,Priorité
+US01,Utilisateur standard,"En tant qu'utilisateur standard, je veux pouvoir prendre une photo d'une plante herbacée avec mon smartphone afin de l'identifier rapidement.","- L'application active l'appareil photo du smartphone
+- L'image est envoyée à l'API PlantNet
+- Le résultat d'identification s'affiche avec le nom de la plante et une probabilité de correspondance
+- Le temps de réponse est inférieur à 5 secondes",Essentielle
+US02,Utilisateur standard,"En tant qu'utilisateur standard, je veux accéder à l'historique de mes identifications précédentes afin de retrouver mes découvertes passées.","- Les identifications sont enregistrées localement et liées au compte utilisateur
+- La liste présente les identifications par ordre chronologique inversé
+- Chaque entrée affiche la date, l'image, le nom de la plante identifiée
+- Possibilité de filtrer par date ou nom de plante",Essentielle
+US03,Botaniste amateur,"En tant que botaniste amateur, je veux pouvoir ajouter des notes personnelles à mes identifications afin de consigner mes observations spécifiques.","- Champ de texte disponible pour chaque identification
+- Possibilité de modifier ou supprimer les notes
+- Les notes sont synchronisées avec le compte utilisateur
+- Limite de 1000 caractères par note",Importante
+US04,Étudiant en agronomie,"En tant qu'étudiant en agronomie, je veux pouvoir ajouter plusieurs photos d'une même plante sous différents angles afin d'avoir une documentation plus complète.","- Possibilité d'ajouter jusqu'à 5 photos par identification
+- Interface intuitive pour naviguer entre les photos
+- Toutes les images sont liées à la même entrée d'identification",Souhaitable
+US05,Agriculteur,"En tant qu'agriculteur, je veux visualiser les scores écologiques de chaque plante identifiée afin d'évaluer ses bénéfices potentiels pour mes cultures.","- Affichage des trois scores (fixation de l'azote, amélioration de la structure du sol, capacité à retenir l'eau)
+- Échelle visuelle intuitive (de 0 à 5 pour chaque critère)
+- Explication succincte de chaque score",Essentielle
+US06,Chercheur en écologie,"En tant que chercheur en écologie, je veux pouvoir comparer les scores écologiques de différentes plantes afin d'identifier les plus performantes selon les critères qui m'intéressent.","- Interface permettant de sélectionner plusieurs plantes de l'historique
+- Graphique comparatif des scores pour les plantes sélectionnées
+- Option pour trier selon l'un des trois critères écologiques",Importante
+US07,Étudiant en écologie,"En tant qu'étudiant en écologie, je veux accéder à des explications détaillées sur les mécanismes écologiques de chaque plante afin d'approfondir mes connaissances.","- Section dédiée accessible depuis la fiche de la plante
+- Informations sur les processus biologiques impliqués dans chaque service écosystémique
+- Références bibliographiques pour approfondir",Importante
+US08,Botaniste amateur,"En tant que botaniste amateur, je veux accéder à des informations complémentaires via des liens vers Tela Botanica afin d'approfondir mes connaissances sur les plantes identifiées.","- Lien fonctionnel vers la fiche Tela Botanica correspondante
+- Indication visuelle des liens externes
+- Possibilité d'ouvrir dans le navigateur ou dans l'application",Essentielle
+US09,Enseignant en sciences naturelles,"En tant qu'enseignant en sciences naturelles, je veux pouvoir partager mes identifications avec mes élèves afin de créer des supports pédagogiques.","- Options de partage via email, SMS, réseaux sociaux
+- Format de partage incluant l'image, le nom et les scores écologiques
+- Possibilité de générer un PDF récapitulatif",Importante
+US10,Chercheur en écologie,"En tant que chercheur en écologie, je veux générer des rapports synthétiques sur plusieurs plantes afin de documenter mes travaux de terrain.","- Sélection multiple de plantes dans l'historique
+- Options de personnalisation du rapport (informations à inclure)
+- Export au format PDF ou CSV",Souhaitable
+US11,Botaniste amateur,"En tant que botaniste amateur, je veux pouvoir contribuer à la base de données en ajoutant des informations vérifiées sur des plantes afin d'enrichir le contenu collectif.","- Interface de soumission avec champs structurés
+- Système de modération des contributions
+- Crédits aux contributeurs
+- Notification lorsqu'une contribution est validée",Souhaitable
+US12,Utilisateur standard,"En tant qu'utilisateur standard, je veux visualiser sur une carte les endroits où j'ai identifié des plantes afin de me souvenir de leur localisation exacte.","- Carte interactive avec géolocalisation
+- Marqueurs pour chaque identification géolocalisée
+- Filtres par type de plante ou score écologique
+- Option pour activer/désactiver l'enregistrement de la localisation",Importante
+US13,Étudiant en biologie,"En tant qu'étudiant en biologie, je veux découvrir quelles plantes ont été identifiées autour de ma position actuelle afin d'orienter mes recherches sur le terrain.","- Affichage des identifications partagées publiquement dans un rayon défini
+- Filtres par type de plante et date d'identification
+- Respect de la vie privée (option d'anonymisation)",Souhaitable
+US14,Agriculteur,"En tant qu'agriculteur, je veux pouvoir utiliser les fonctionnalités basiques de l'application sans connexion internet afin de l'utiliser dans des zones rurales mal couvertes.","- Synchronisation des données lorsque la connexion est rétablie
+- Base de données locale des plantes les plus communes
+- Indication claire des limitations du mode hors ligne
+- Priorisation des données à synchroniser",Importante
+US15,Administrateur système,"En tant qu'administrateur système, je veux pouvoir gérer les droits d'accès des utilisateurs afin de maintenir la sécurité et l'intégrité du système.","- Interface d'administration sécurisée
+- Création, modification et suppression de comptes
+- Attribution de rôles avec différents niveaux d'accès
+- Journal des activités administratives",Essentielle
+US16,Jardinier,"En tant que jardinier, je veux recevoir des recommandations de plantes complémentaires basées sur mes identifications précédentes afin d'optimiser la biodiversité de mon jardin.","- Algorithme de recommandation basé sur les associations bénéfiques entre plantes
+- Suggestions adaptées à la localisation géographique
+- Explication des bénéfices de chaque association proposée",Facultative
+US17,Nouvel utilisateur,"En tant que nouvel utilisateur, je veux accéder à des tutoriels expliquant les fonctionnalités de l'application afin de l'utiliser efficacement dès le début.","- Tutoriel interactif lors de la première utilisation
+- Section d'aide accessible à tout moment
+- FAQ organisée par thématiques
+- Vidéos explicatives pour les fonctionnalités complexes",Souhaitable
